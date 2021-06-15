@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ header {
+    display: flex;
+    background-image:url("2f528defd22126dcf3012455f96052da.jpg");
+    height:50rem;
+    background-size:cover;
+    background-position: center;  
+    width: 100%;
+    margin-bottom: 4rem;
+    color:white;
+    align-items: flex-end;
+} 
+
+.text{
+    margin-bottom:2rem;
+    margin-left:2rem
+}
+
+.songfinder{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.5em; 
+}
+
+.artist, .title, .buttons{
+   margin-right:0.5rem;
+   margin-left:0.5rem;
+   display: flex;
+   flex-direction: column;
+   align-self: baseline;
+}
+
+.artist, .title {
+    color:#c80606;
+}
+
+input{
+    padding:0.5em;
+    border:none;
+    border-bottom:1px solid grey;
+    outline:unset;
+}
+
+.button-lyrics{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin:0.5em;
+    background-color: white;
+}
+
+
+.output{
+    display: flex;
+    justify-content: center;
+    margin-bottom:5rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    width: 30rem;
+    background-color:#3e3e3e21;
+    color:#5b5b5b;
+}
+
+.error-message{
+    padding:0.5em;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
+
+
+
+    <title>Fetch Lyrics</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="text">
+        <h1>Welcome</h1>
+        <p>We can guarantee that we have your taste in music, a few click away and you have your lyric! </p>
+        </div>
+    </header>
+    
+    
+    <div class="songfinder" id="songfinder">
+        <div class="artist"> 
+            <input type="text" id="artist" name="artist" placeholder="Type in your artist">
+        </div>
+        
+        <div class="title">
+            <input type="text" id="song" name="song" placeholder="Type in your title">
+            <div class="error-message" id="error-title"></div>
+
+        </div>
+        <div class="buttons">
+            <button disabled class="button-lyrics" type="submit" id="button">Find my song</button>
+        </div>
+    </div>
+    <div class="output">
+        <p id="lyricsArea"></p>
+        <br>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
