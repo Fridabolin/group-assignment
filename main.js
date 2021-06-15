@@ -40,21 +40,24 @@ artist.addEventListener("keyup", function(event){
    button.addEventListener("click", () => {
    const errorMessage = errorMessagesTitle() 
    
+   
    if( errorMessage === true){
     const inputArtist = artist.value;
     const inputTitle = songTitle.value;
     messages = " "
     showErrorTitle.innerText = messages  
 
-    fetch(`https://api.lyrics.ovh/v1/${inputArtist}/${inputTitle}`).then(function(response){
+    fetch(`http://ianertson.com:3500/${inputArtist}/${inputTitle}`).then(function(response){
       response.json().then(data => {
-        outputLyrics.innerText=data.lyrics
+
+        if(data.length === 0){
+          outputLyrics.innerText= "uh oh! we couldn't find your lyrics"
+        } else {
+          outputLyrics.innerText = data[0].lyrics
+        }
       })
-    }).catch(err =>{
-      outputLyrics.innerText= "uh oh..! we couldn't find your song!"
-      console.log(err)
-    }); 
-  } 
+    })
+  }
 });
 
 
