@@ -27,8 +27,10 @@ artist.addEventListener("keyup", function(event){
   const value = event.target.value 
 
   if (value.length >=1 && value != " "){
+    outputLyrics.innerText= ""
     button.removeAttribute("disabled")
   } else {
+    outputLyrics.innerText= "Button won't work whitout an Artist "
     button.setAttribute("disabled",1) 
   }
 })
