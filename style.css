@@ -44,9 +44,6 @@ body{
    align-self: baseline;
 }
 
-.artist, .title {
-    color:#c80606;
-}
 
 input{
     padding:0.5em;
@@ -73,8 +70,4 @@ input{
     width: 30rem;
     background-color:#3e3e3e21;
     color:#5b5b5b;
-}
-
-.error-message{
-    padding:0.5em;
 }
